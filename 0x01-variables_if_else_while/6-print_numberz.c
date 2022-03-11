@@ -1,19 +1,18 @@
 #include <stdio.h>
-#include <assert.h>
 
-int main()
+/**
+ * main - Prints 0 -9
+ *
+ * Return: Always 0 (success)
+ */
+int main(void)
 {
-    const int max_precision = 100000;
-    int b = 7414;
-    int max = b * max_precision;
+	int num;
 
-    assert(b > 0);
-
-    while (b <= max && b >= 0)
-    {
-        putchar('0' + (b / max_precision) % 10);
-        b *= 10;
-    }
-
-    putchar('\n');
+	for (num = 48; num < 58; num++)
+	{
+		putchar(num);
+	}
+	putchar('\n');
+	return (0);
 }
