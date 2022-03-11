@@ -19,7 +19,7 @@ int main(void)
 		{
 			putchar(num - 10 + 'A');
 		}
-		putchar(10);
 	}
+		putchar(10);
 	return (0);
 }
