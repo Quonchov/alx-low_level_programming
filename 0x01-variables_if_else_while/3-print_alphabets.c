@@ -1,26 +1,21 @@
 #include <stdio.h>
 
-int main()
+/**
+ * main - Prints the alphabet in lowercase
+ *
+ * Return: Alwasy 0 (success)
+ */
+int main(void)
 {
-	//loop counter or a variable that
-	//will store initial alphabet,
-	//from where we will print the alphabets
-	char alphabet;
-	//assigning 'a' as initial alphabet
-	alphabet='a';
+	char alpha_lower = 'a', alpha_upper = 'A';
 
-	//print statement
-	printf("Lowercase alphabets:\n");
-
-	//loop statement, that will check the condition
-	//and print the alphabets from 'a' to 'z'
-	while(alphabet<='z')
+	while (alpha_lower <= 'z' && alpha_upper <= 'Z')
 	{
-		//printing the alphabets
-		printf("%c ",alphabet);
-		//increasing the value by 1
-		alphabet++;
+		putchar (alpha_lower);
+		putchar (alpha_upper);
+		alpha_lower++;
+		alpha_upper++;
 	}
-
-	return 0;
+	putchar ('\n');
+	return (0);
 }
