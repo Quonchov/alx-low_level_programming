@@ -1,28 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Determines if a number is positive, negative or zero
+ * main - Prints the alphabet in lowercase
  *
  * Return: Alwasy 0 (success)
  */
 int main(void)
 {
-	int n;
+	char alphabet = 'a';
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	while (alphabet <= 'z')
 	{
-		printf("%d is positive\n", n);
+		putchar (alphabet);
+		alphabet++;
 	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
+	putchar ('\n');
 	return (0);
 }
